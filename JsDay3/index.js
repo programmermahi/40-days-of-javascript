@@ -21,3 +21,21 @@ count++;
 console.log("Incremented Count: " + count);
 count--;
 console.log("Decremented Count: " + count);
+
+
+// assignment operators
+console.log("*** assignment operators ***");
+let a = 10;
+console.log("Initial a: " + a);
+a += 5; // a = a + 5
+console.log("After a += 5: " + a);
+a -= 3;
+console.log("After a -= 3: " + a);
+a *= 2;
+console.log("After a *= 2: " + a);
+a /= 4;
+console.log("After a /= 4: " + a);
+a %= 3;
+console.log("After a %= 3: " + a);
+a **= 2;
+console.log("After a **= 2: " + a);
