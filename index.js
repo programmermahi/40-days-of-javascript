@@ -41,4 +41,107 @@ a **= 2;
 console.log("After a **= 2: " + a);
 
 
+// comparison operators
+console.log("*** comparison operators ***");
+let p = 15;
+let q = 20;
+console.log(p==q); // false
+console.log(p!=q);
+console.log(0== false); // true
+console.log(0=== false);
+console.log(0!== false);
+console.log(3=='3'); // true
+console.log(3==='3');
+console.log(3!= '3');
+console.log(3!== '3');
+console.log(null == undefined); // true
+console.log(null === undefined); // false
+console.log(null === null); // true
+console.log(undefined === undefined); // true
 
+//Nan=Not a Number
+console.log(NaN == NaN);
+
+// logical operators
+console.log("*** logical operators ***");
+let age = 25;
+let hasID = true;
+console.log((age >= 18) && hasID); // true
+console.log((age < 18) || hasID);   // true
+console.log(!(age < 18));           // true     
+console.log(!(hasID));              // false        
+console.log((age < 18) && hasID);   // false
+console.log((age >= 18) || !hasID); // true
+console.log((age < 18) || !hasID);  // false
+console.log((age >= 18) && !hasID); // false
+console.log((age < 18) || hasID);   // true
+console.log((age >= 18) && hasID); // true
+console.log((age < 18) && hasID);   // false
+console.log((age >= 18) || !hasID); // true
+console.log((age < 18) || !hasID);  // false
+console.log(!(age >= 18));          // false
+console.log(!(hasID));              // false
+console.log((age >= 18) && !hasID); // false
+console.log((age < 18) || hasID);   // true
+console.log((age >= 18) && hasID); // true
+console.log((age < 18) && hasID);   // false
+console.log((age >= 18) || !hasID); // true
+console.log((age < 18) || !hasID);
+// false
+console.log(!(age >= 18));          // false
+
+console.log(!(hasID));              // false
+console.log((age >= 18) && !hasID); // false
+
+console.log((age < 18) || hasID);   // true
+console.log((age >= 18) && hasID); // true
+console.log((age < 18) && hasID);   // false
+console.log((age >= 18) || !hasID); // true
+
+console.log((age < 18) || !hasID);  // false
+console.log(!(age >= 18));          // false
+
+console.log(!(hasID));              // false
+console.log((age >= 18) && !hasID); // false
+console.log((age < 18) || hasID);   // true
+console.log((age >= 18) && hasID); // true
+console.log((age < 18) && hasID);   // false
+console.log((age >= 18) || !hasID); // true
+console.log((age < 18) || !hasID);  // false
+console.log(!(age >= 18));          // false
+console.log(!(hasID));
+
+                // false
+console.log((age >= 18) && !hasID); // false
+console.log((age < 18) || hasID);   // true
+console.log((age >= 18) && hasID); // true
+console.log((age < 18) && hasID);   // false
+console.log((age >= 18) || !hasID); // true
+
+console.log((age < 18) || !hasID);  // false
+console.log(!(age >= 18));
+            // false
+console.log(!(hasID));              // false
+console.log((age >= 18) && !hasID); // false
+console.log((age < 18) || hasID);   // true 
+console.log((age >= 18) && hasID); // true
+console.log((age < 18) && hasID);   // false
+console.log("cow" && "dog"); // dog
+console.log("" && "dog"); // ""
+console.log("cow" && ""); // ""
+console.log("" && ""); // ""
+
+console.log("cow" || "dog"); // cow
+console.log("" || "dog"); // dog
+console.log("cow" || ""); // cow
+console.log("" || ""); // ""    
+
+console.log(!false); // true
+console.log(!true); // false 
+
+let a1 = null ?? 1;//1
+let a2 = undefined ?? 2;//2
+let a3 = 3 ?? 3;//3
+let a4 = 0 ?? 4;//0
+let a5 = "" ?? 5;//""
+let a6 = false ?? 6;//false
