@@ -145,3 +145,8 @@ let a3 = 3 ?? 3;//3
 let a4 = 0 ?? 4;//0
 let a5 = "" ?? 5;//""
 let a6 = false ?? 6;//false
+console.log(a1, a2, a3, a4, a5, a6);
+
+//conditional (ternary) operator
+console.log("*** conditional (ternary) operator ***");
+let score = 85;
