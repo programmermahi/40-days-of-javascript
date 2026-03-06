@@ -1,41 +1,53 @@
 // Number Guessing Game
-// the computer will generate a random number between 1 and 10
-// the user will guess the number
-// the program will tell if the guess is too high or too low
-// finally it will show the number of attempts
 
-console.log("Welcome to the Number Guessing Game!");
-console.log("Try to guess a number between 1 and 10.");
+function numberGuessingGame(){
 
-let randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log("Welcome to the Number Guessing Game!");
 
-let attempts = 0;
+    // computer random number
+    let randomNumber = Math.floor(Math.random()*10) + 1;
 
-let userGuess;
+    let attempts = 0;
+    let guess;
 
-while(true){
+    while(true){
 
-    let userInput = prompt("Enter your guess:");
+        guess = prompt("Enter a number between 1 and 10:");
 
-    userGuess = Number(userInput);
+        let userGuess = Number(guess);
 
-    attempts++;
+        attempts++;
 
-    if(userGuess > randomNumber){
-        console.log("Too High! Try again.");
+        if(userGuess < randomNumber){
+            console.log("Too Low! Try again.");
+        }
+
+        else if(userGuess > randomNumber){
+            console.log("Too High! Try again.");
+        }
+
+        else if(userGuess === randomNumber){
+            console.log("Correct Guess!");
+            console.log("Total Attempts: " + attempts);
+            break;
+        }
+
+        else{
+            console.log("Invalid Input!");
+        }
     }
+    const playAgainPrompt = prompt("Do you want to play again? (yes or no):");
+    const playAgain =playAgainPrompt ? playAgainPrompt.toLocaleLowerCase() : "no";
 
-    else if(userGuess < randomNumber){
-        console.log("Too Low! Try again.");
+    if(playAgain === "yes"){
+        numberGuessingGame();
     }
-
-    else if(userGuess === randomNumber){
-        console.log("🎉 Congrats! You guessed the number in " + attempts + " attempts.");
-        break;
-    }
-
     else{
-        console.log("Invalid input! Enter a number.");
+        console.log("Thank you for playing! Goodbye!");
     }
+
 
 }
+
+// start the game
+numberGuessingGame();
